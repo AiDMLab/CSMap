@@ -1,0 +1,44 @@
+[
+  {
+    "sample": "D02T1",
+    "effective_spots": 1618,
+    "zero_assignment_spots": 0,
+    "assigned_instances": 7884,
+    "coordinate_max_error_pixels": 2.2737367544323206e-13,
+    "image_identical": true,
+    "full_image_width": 1928,
+    "full_image_height": 2000,
+    "spot_diameter_pixels": 14.602049985771252,
+    "smoothing_distance_limit_pixels": 28.019580037319514,
+    "neighbours_excluding_self_min": 1,
+    "neighbours_excluding_self_max": 6
+  },
+  {
+    "sample": "D18T2",
+    "effective_spots": 3166,
+    "zero_assignment_spots": 0,
+    "assigned_instances": 7884,
+    "coordinate_max_error_pixels": 2.2737367544323206e-13,
+    "image_identical": true,
+    "full_image_width": 2000,
+    "full_image_height": 1991,
+    "spot_diameter_pixels": 14.667002323008678,
+    "smoothing_distance_limit_pixels": 28.12091853100888,
+    "neighbours_excluding_self_min": 0,
+    "neighbours_excluding_self_max": 6
+  },
+  {
+    "sample": "D24T2",
+    "effective_spots": 3557,
+    "zero_assignment_spots": 0,
+    "assigned_instances": 7884,
+    "coordinate_max_error_pixels": 2.2737367544323206e-13,
+    "image_identical": true,
+    "full_image_width": 2000,
+    "full_image_height": 1981,
+    "spot_diameter_pixels": 15.424845993819815,
+    "smoothing_distance_limit_pixels": 29.646373883353625,
+    "neighbours_excluding_self_min": 0,
+    "neighbours_excluding_self_max": 6
+  }
+]

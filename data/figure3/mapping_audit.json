@@ -1,0 +1,110 @@
+[
+  {
+    "dataset": "MOB",
+    "method": "CSMap",
+    "source": "data/figure3/n0_CSMap_assigned.csv",
+    "instances": 2467,
+    "unique_cells": 2467,
+    "input_cells": 2561,
+    "spot_ids_recovered_by_exact_coordinate_match": 0
+  },
+  {
+    "dataset": "MOB",
+    "method": "CytoSPACE",
+    "source": "data/figure3/n0_CytoSPACE_assigned.csv",
+    "instances": 2467,
+    "unique_cells": 2083,
+    "input_cells": 2561,
+    "spot_ids_recovered_by_exact_coordinate_match": 0
+  },
+  {
+    "dataset": "MOB",
+    "method": "Tangram",
+    "source": "data/figure3/n0_Tangram_assigned.csv",
+    "instances": 2561,
+    "unique_cells": 2561,
+    "input_cells": 2561,
+    "spot_ids_recovered_by_exact_coordinate_match": 0
+  },
+  {
+    "dataset": "MOB",
+    "method": "CellTrek",
+    "source": "data/figure3/n0_CellTrek_assigned.csv",
+    "instances": 1723,
+    "unique_cells": 601,
+    "input_cells": 2561,
+    "spot_ids_recovered_by_exact_coordinate_match": 0
+  },
+  {
+    "dataset": "Cerebellum (n = 5)",
+    "method": "CSMap",
+    "source": "data/figure3/n5_CSMap_assigned.csv",
+    "instances": 21518,
+    "unique_cells": 21518,
+    "input_cells": 23372,
+    "spot_ids_recovered_by_exact_coordinate_match": 0
+  },
+  {
+    "dataset": "Cerebellum (n = 5)",
+    "method": "CytoSPACE",
+    "source": "data/figure3/n5_CytoSPACE_assigned.csv",
+    "instances": 21518,
+    "unique_cells": 16600,
+    "input_cells": 23372,
+    "spot_ids_recovered_by_exact_coordinate_match": 0
+  },
+  {
+    "dataset": "Cerebellum (n = 5)",
+    "method": "Tangram",
+    "source": "data/figure3/n5_Tangram_assigned.csv",
+    "instances": 23372,
+    "unique_cells": 23372,
+    "input_cells": 23372,
+    "spot_ids_recovered_by_exact_coordinate_match": 23372
+  },
+  {
+    "dataset": "Cerebellum (n = 5)",
+    "method": "CellTrek",
+    "source": "data/figure3/n5_CellTrek_assigned.csv",
+    "instances": 14801,
+    "unique_cells": 7846,
+    "input_cells": 23372,
+    "spot_ids_recovered_by_exact_coordinate_match": 14801
+  },
+  {
+    "dataset": "Cerebellum (n = 15)",
+    "method": "CSMap",
+    "source": "data/figure3/n15_CSMap_assigned.csv",
+    "instances": 22381,
+    "unique_cells": 22381,
+    "input_cells": 23372,
+    "spot_ids_recovered_by_exact_coordinate_match": 0
+  },
+  {
+    "dataset": "Cerebellum (n = 15)",
+    "method": "CytoSPACE",
+    "source": "data/figure3/n15_CytoSPACE_assigned.csv",
+    "instances": 22381,
+    "unique_cells": 16356,
+    "input_cells": 23372,
+    "spot_ids_recovered_by_exact_coordinate_match": 0
+  },
+  {
+    "dataset": "Cerebellum (n = 15)",
+    "method": "Tangram",
+    "source": "data/figure3/n15_Tangram_assigned.csv",
+    "instances": 23372,
+    "unique_cells": 23372,
+    "input_cells": 23372,
+    "spot_ids_recovered_by_exact_coordinate_match": 0
+  },
+  {
+    "dataset": "Cerebellum (n = 15)",
+    "method": "CellTrek",
+    "source": "data/figure3/n15_CellTrek_assigned.csv",
+    "instances": 16214,
+    "unique_cells": 9124,
+    "input_cells": 23372,
+    "spot_ids_recovered_by_exact_coordinate_match": 0
+  }
+]
