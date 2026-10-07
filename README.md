@@ -6,7 +6,7 @@
 
 This repository contains the dense CSMap implementation and the analysis code associated with the manuscript's final Figures 1–5. CSMap expands spot capacities into slots with cell-type labels, combines expression costs with a finite cell-type mismatch penalty, and solves a global linear assignment problem using LAPJV. Finite penalties allow expression evidence to override the composition prior while retaining the prescribed spot capacities.
 
-This is a manuscript reproducibility repository. It includes a runnable synthetic example, the saved benchmark assignments and plotting inputs, and scripts for the selected MOB ablation and gastric analyses. It does not contain the thesis, manuscript drafts, patent materials, unrelated tissue experiments, or experimental sparse solvers.
+This is a manuscript reproducibility repository. It includes a runnable synthetic example, the saved benchmark assignments and plotting inputs, and scripts for the selected MOB ablation and gastric analyses. 
 
 ## Installation and quick start
 
@@ -22,8 +22,6 @@ python analysis/test_original_quota_fix.py
 ```
 
 The demo creates synthetic input matrices and maps 24 cells to eight spots with three cells per spot. Outputs are written to `results/demo/`. The benchmark check recomputes 60 scores across the three settings and four methods from the included assignments and compares them with the manuscript tables.
-
-Large biological datasets are **not** needed for these checks or for redrawing Figures 2–5. Full mapping runs have substantially higher memory requirements: the original solver constructs a dense N × N cost matrix, where N is the number of assigned instances.
 
 ## Repository contents
 
@@ -61,9 +59,9 @@ Outputs are placed in `results/figures/`, including PDF, PNG and SVG files. Aria
 | Figure 2 | Current assignment-based CMR, CU, WCMR and OP-Score tables, plus the separately preserved historical SMLE distributions. |
 | Figure 3 | Selected compact spatial reconstruction panels from saved assignments. |
 | Figure 4 | Selected eight-panel penalty, prior-perturbation, seed, capacity and gene-pool analysis. |
-| Figure 5 | Selected D02T1 and D18T2 spatial panels and paired marker-correlation panels. The table retains all 33 type-by-section results, including D24T2. |
+| Figure 5 | Selected D02T1 and D18T2 spatial panels and paired marker-correlation panels.  |
 
-Redrawing a figure uses saved numerical results; it does not rerun CSMap or the three baseline tools. Baseline assignments are included for auditing. Baseline source packages and their original training environments are not bundled.
+
 
 ### Metric definitions and interpretation
 
@@ -73,9 +71,7 @@ Redrawing a figure uses saved numerical results; it does not rerun CSMap or the 
 - **WRR:** spot recall weighted by the true cell count of each spot.
 - **OP-Score:** CMR × CU.
 - **Composition TV:** half the sum of absolute type-fraction differences per spot, averaged over spots.
-- **SMLE:** Figure 2 uses the preserved historical distributions in `data/figure2/historical_*_smle.csv`. The spot-center distances that can be recalculated from the saved mappings are a different evaluation record and must not silently replace these distributions. The original SMLE records do not provide complete per-cell traceability for harmonizing duplicate and unmapped-cell handling.
-
-The two cerebellum settings share reference cells. MOB composition priors are derived from simulation truth. Gastric sections are descriptive examples selected after analysis, and held-out-marker agreement is not a validation of true single-cell coordinates or clinical utility. Spatial smoothing is used for display; the paired marker correlations use unsmoothed mapped fractions.
+- **SMLE:** Figure 2 uses the preserved historical distributions in `data/figure2/historical_*_smle.csv`. The spot-center distances that can be recalculated from the saved mappings are a different evaluation record and must not silently replace these distributions. 
 
 ## Map a new dataset
 
@@ -104,7 +100,6 @@ python analysis/run_mapping.py \
 
 The synthetic files under `results/demo/inputs/` provide a complete working example. Matrix Market input is also supported with sibling `genes.tsv` and `barcodes.tsv` files, as prepared by `run_gastric.py`. The bundled scanpy compatibility reader does not implement `read_visium`; prepare matrices explicitly.
 
-Omitting `--penalty` retains the original adaptive penalty rule. `--penalty 0` gives an expression-only assignment. Penalty magnitudes depend on the original expression-cost scale. `--quota-guard` enables the negative-quota repair used for the gastric analyses. The output assignment CSV records `UniqueCID`, `OriginalCID`, `CellType` and `SpotID`, preserving the distinction between sampled instances and original reference cells.
 
 ## Rerun the MOB analysis
 
